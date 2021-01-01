@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color:rgb(22, 21, 21)
+    background-color:rgb(27, 26, 26)
 }
 
 
@@ -31,4 +31,64 @@ body{
     text-decoration: none;
     color: white;
     font-size:12px;
+}
+
+/* * Player Search */
+.playersearchform{
+    display: flex;
+    width: 95%;
+    margin: 20px auto;
+}
+
+.playersearchinput{
+    flex: 1;
+    outline: none;
+    border:none;
+    padding:10px;
+    border-radius: 50px;
+    margin: 0px 3px;
+    background-color:rgb(10, 10, 10);
+    font-family: "Fira Code";
+    color: whitesmoke;
+}
+
+.playersearchsubmit{
+    background:linear-gradient(to right,cornflowerblue,royalblue);
+    border-radius: 50px;
+    padding:10px;
+    width: 100px;
+    outline: none;
+    border:none;
+    color: whitesmoke;
+    font-family: "Fira Code";
+    cursor: pointer;
+}
+
+
+/* *Players */
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap:10px;
+    width: 90%;
+    margin: auto;
+}
+
+.player{
+    background-color: rgb(46, 45, 45);
+    color: whitesmoke;
+    text-align:center;
+    padding:10px;
+    border-radius:5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.name{
+    color: orangered;
+}
+
+.pid{
+    color: orange;
 }
